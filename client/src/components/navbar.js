@@ -1,9 +1,9 @@
 function Navbar(props) {
     return(
         <header class="header">
-          <h1>Venture</h1>
-          <div>
-          <ul>
+            <h1>Venture</h1>
+            <div>
+            <ul>
                 <li>
                     <a href="#Map" onClick={()=>props.setCurrentPage("map")}>Map</a>
                 </li>
@@ -16,9 +16,9 @@ function Navbar(props) {
                 {/* <li>
                     <a href="#Classifieds" onClick={()=>props.setCurrentPage("classifieds")}>classifieds</a>
                 </li> */}
-              
-          </ul>
-          </div>
-      </header>
+                
+            </ul>
+            </div>
+        </header>
     )
 }

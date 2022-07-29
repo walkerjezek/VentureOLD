@@ -4,6 +4,7 @@ const typeDefs = gql`
   type Activity {
     _id: ID!
     name: String!
+    skill: String!
   }
 
   type Matchup {
@@ -12,7 +13,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    tech: [Tech]
+    activity: [Activity]
     matchups(_id: String): [Matchup]
   }
 
