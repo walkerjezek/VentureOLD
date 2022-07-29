@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_MATCHUPS } from '../utils/queries';
+import React, { Component } from 'react';
+import './../../public/styles.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_MATCHUPS, {
@@ -10,35 +13,97 @@ const Home = () => {
   const matchupList = data?.matchups || [];
 
   return (
-    <div className="card bg-white card-rounded w-50">
-      <div className="card-header bg-dark text-center">
-        <h1>Welcome to Venture!</h1>
+    <div>
+      <section id="login">
+
+      <div class="row">
+
+        <div class="col-md-6 col-sm-12 p-0 mb-0">
+            <div
+            class="img img-welcome"
+            style="max-width:100%; height:auto; margin-bottom:0 !important;"
+            >
+            <img src="https://st2.depositphotos.com/1002200/7678/i/950/depositphotos_76782389-stock-photo-summer-mountain-lake-forrest.jpg" alt="background" class="img-fluid" />
+
+            <div class="overlay-login p-3 ml-2">
+                <h4>Login</h4>
+                <form class="form login-form">
+                <div class="form-group p-1">
+                    <label for="email-login">Email:</label>
+                    <br />
+                    <input class="form-input" type="text" id="email-login" />
+                </div>
+
+                <div class="form-group p-1">
+                    <label for="password-login">Password:</label>
+                    <br />
+                    <input class="form-input" type="password" id="password-login" />
+                </div>
+
+                <br />
+                <h4>Welcome Back!!</h4>
+                <br />
+                <div class="form-group p-1">
+                    <button class="btn btn-primary login" type="submit">Login</button>
+                </div>
+                </form>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6 col-sm-12 p-0 mb-0">
+            <div
+            class="img img-welcome"
+            style="max-width:100%; height:auto; margin-bottom:0 !important;"
+            >
+            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="stretch" class="img-fluid" />
+
+            <div class="overlay-newUser p-3 ml-2">
+                <h4>Create New User</h4>
+                <form class="form create-form">
+
+                <div class="form-group p-1">
+                    <label for="username-create">Userame:</label>
+                    <br />
+                    <input class="form-input1" type="text" id="create1" />
+                </div>
+
+                <div class="form-group p-1">
+                    <label for="email-create">Email:</label>
+                    <br />
+                    <input class="form-input2" type="text" id="create2" />
+                </div>
+
+                <div class="form-group p-1">
+                    <label for="password-create">Create password:</label>
+                    <br />
+                    <input class="form-input" type="password" id="password-create" />
+                </div>
+
+                <div class="form-group p-1">
+                    <label for="zipcode-create">Zipcode:</label>
+                    <br />
+                    <input class="form-input" type="zipcode" id="zipcode-create" />
+                </div>
+
+                <br />
+                  <div class="form-group p-2">
+                      <button
+                      class="btn btn-primary create"
+                      id="pushme"
+                      type="submit"
+                      >Create</button>
+                  </div>
+                </form>
+            </div>
+          </div>
+        </div>
+
+
       </div>
-      <div className="card-body m-5">
-        <h2>Here is a list of matchups you can vote on:</h2>
-        {loading ? (
-          <div>Loading...</div>
-        ) : (
-          <ul className="square">
-            {matchupList.map((matchup) => {
-              return (
-                <li key={matchup._id}>
-                  <Link to={{ pathname: `/matchup/${matchup._id}` }}>
-                    {matchup.tech1} vs. {matchup.tech2}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        )}
-      </div>
-      <div className="card-footer text-center m-3">
-        <h2>Ready to create a new matchup?</h2>
-        <Link to="/matchup">
-          <button className="btn btn-lg btn-danger">Create Matchup!</button>
-        </Link>
-      </div>
-    </div>
+    </section>
+  </div>
   );
 };
 

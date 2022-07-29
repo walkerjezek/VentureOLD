@@ -5,7 +5,7 @@ function Navbar(props) {
             <div>
             <ul>
                 <li>
-                    <a href="#Weather Map" onClick={()=>props.setCurrentPage("weathermap")}>Weather Map</a>
+                    <a href="#Map" onClick={()=>props.setCurrentPage("map")}>Map</a>
                 </li>
                 <li>
                     <a href="#Profile" onClick={()=>props.setCurrentPage("profile")}>Profile</a>
