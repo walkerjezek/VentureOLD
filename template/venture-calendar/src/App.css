@@ -1,4 +1,3 @@
-/* calendar */
 .react-calendar { 
   width: 400px;
   max-width: 100%;
@@ -18,7 +17,7 @@
 }
 .react-calendar__navigation button:enabled:hover,
 .react-calendar__navigation button:enabled:focus {
-background-color: #f8f8fa;
+  background-color: #f8f8fa;
 }
 .react-calendar__navigation button[disabled] {
   background-color: #f0f0f0;
@@ -26,7 +25,9 @@ background-color: #f8f8fa;
 abbr[title] {
   text-decoration: none;
 }
-
+/* .react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+ } */
 .react-calendar__tile:enabled:hover,
 .react-calendar__tile:enabled:focus {
   background: #f8f8fa;
