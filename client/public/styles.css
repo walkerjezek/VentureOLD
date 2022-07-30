@@ -177,3 +177,11 @@ border-radius: 50%;
 border: 1px solid #ccc;
 object-fit: contain;
 }
+
+
+.ventureWelcome {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
