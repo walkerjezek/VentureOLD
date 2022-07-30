@@ -8,6 +8,6 @@ db.once('open', async () => {
 
   const activities = await Activity.insertMany(activityData);
 
-  console.log('TActivities seeded!');
+  console.log('Activities seeded!');
   process.exit(0);
 });
