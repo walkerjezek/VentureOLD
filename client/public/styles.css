@@ -185,3 +185,25 @@ object-fit: contain;
     align-items: center;
     padding: 50px;
 }
+
+.ventureLanding {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.ventureLanding h1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.activitiesList {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100%;
+    padding-left: 100px;
+}
