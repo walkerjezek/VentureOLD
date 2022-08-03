@@ -16,35 +16,35 @@ const Home = () => {
     <div>
      <section id="login">
 
-<div class="row">
+<div className="row">
 
-    <div class="col-md-6 col-sm-12 p-0 mb-0">
+    <div className="col-md-6 col-sm-12 p-0 mb-0">
         <div
-        class="img img-welcome"
+        className="img img-welcome"
         style="max-width:100%; height:auto; margin-bottom:0 !important;"
         >
-        <img src="https://theuiaa.org/wp-content/uploads/2019/07/RCFA19-Korea-6.jpg" alt="background" class="img-fluid" />
+        <img src="https://theuiaa.org/wp-content/uploads/2019/07/RCFA19-Korea-6.jpg" alt="background" className="img-fluid" />
 
-        <div class="overlay-login p-3 ml-2">
+        <div className="overlay-login p-3 ml-2">
             <h4>Login</h4>
-            <form class="form login-form">
-            <div class="form-group p-1">
-                <label for="email-login">Email:</label>
+            <form className="form login-form">
+            <div className="form-group p-1">
+                <label htmlFor="email-login">Email:</label>
                 <br />
-                <input class="form-input" type="text" id="email-login" />
+                <input className="form-input" type="text" id="email-login" />
             </div>
 
-            <div class="form-group p-1">
-                <label for="password-login">Password:</label>
+            <div className="form-group p-1">
+                <label htmlFor="password-login">Password:</label>
                 <br />
-                <input class="form-input" type="password" id="password-login" />
+                <input className="form-input" type="password" id="password-login" />
             </div>
 
             <br />
             <h4>Welcome Back!!</h4>
             <br />
-            <div class="form-group p-1">
-                <button class="btn btn-primary login" type="submit">Login</button>
+            <div className="form-group p-1">
+                <button className="btn btn-primary login" type="submit">Login</button>
             </div>
             </form>
         </div>
@@ -52,45 +52,45 @@ const Home = () => {
     </div>
 
 
-    <div class="col-md-6 col-sm-12 p-0 mb-0">
+    <div className="col-md-6 col-sm-12 p-0 mb-0">
         <div
-        class="img img-welcome"
+        className="img img-welcome"
         style="max-width:100%; height:auto; margin-bottom:0 !important;"
         >
-        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="stretch" class="img-fluid" />
+        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="stretch" className="img-fluid" />
 
-        <div class="overlay-newUser p-3 ml-2">
+        <div className="overlay-newUser p-3 ml-2">
             <h4>Create New User</h4>
-            <form class="form create-form">
+            <form className="form create-form">
 
-            <div class="form-group p-1">
-                <label for="username-create">Userame:</label>
+            <div className="form-group p-1">
+                <label htmlFor="username-create">Userame:</label>
                 <br />
-                <input class="form-input1" type="text" id="create1" />
+                <input className="form-input1" type="text" id="create1" />
             </div>
 
-            <div class="form-group p-1">
-                <label for="email-create">Email:</label>
+            <div className="form-group p-1">
+                <label htmlFor="email-create">Email:</label>
                 <br />
-                <input class="form-input2" type="text" id="create2" />
+                <input className="form-input2" type="text" id="create2" />
             </div>
 
-            <div class="form-group p-1">
-                <label for="password-create">Create password:</label>
+            <div className="form-group p-1">
+                <label htmlFor="password-create">Create password:</label>
                 <br />
-                <input class="form-input" type="password" id="password-create" />
+                <input className="form-input" type="password" id="password-create" />
             </div>
 
-            <div class="form-group p-1">
-                <label for="zipcode-create">Zipcode:</label>
+            <div className="form-group p-1">
+                <label htmlFor="zipcode-create">Zipcode:</label>
                 <br />
-                <input class="form-input" type="zipcode" id="zipcode-create" />
+                <input className="form-input" type="zipcode" id="zipcode-create" />
             </div>
 
             <br />
-            <div class="form-group p-2">
+            <div className="form-group p-2">
                 <button
-                class="btn btn-primary create"
+                className="btn btn-primary create"
                 id="pushme"
                 type="submit"
                 >Create</button>
@@ -101,7 +101,7 @@ const Home = () => {
     </div>
 </div>
 
-<div class="ventureWelcome">
+<div className="ventureWelcome">
     <h1>Welcome to Venture!</h1>
     <p>Have you ever wanted to go out and do something active but all your friends are busy? Venture aims to fix that. 
         This app enables you to create a profile, add your favorite activities and skill level, and be matched up with 
