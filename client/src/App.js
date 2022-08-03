@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom';
 import {
   ApolloClient,
   InMemoryCache,
@@ -36,6 +36,13 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 function App() {
+
+  const [token, setToken] = useState();
+
+  if(!token) {
+    return <Login setToken={setToken} /> //made need to switch 'Login' to 'Home'
+  }
+
   return (
     <ApolloProvider client={client}>
       <Router>
