@@ -4,13 +4,37 @@ import { useQuery } from '@apollo/client';
 import React, { Component } from 'react';
 // import './../../public/styles.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import PropTypes from 'prop-types';
 
-const Home = () => {
+async function loginUser(credentials) {
+    return fetch('http://localhost:8080/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(credentials)
+    })
+      .then(data => data.json())
+   }
+
+const Home = ({ setToken }) => {
+
+  const [username, setUserName] = useState();
+  const [password, setPassword] = useState();
 //   const { loading, data } = useQuery(QUERY_MATCHUPS, {
 //     fetchPolicy: "no-cache"
 //   });
 
 //   const matchupList = data?.matchups || [];
+
+const handleSubmit = async e => {
+    e.preventDefault();
+    const token = await loginUser({
+      username,
+      password
+    });
+    setToken(token);
+  }
 
   return (
     <div>
@@ -27,17 +51,17 @@ const Home = () => {
 
         <div className="overlay-login p-3 ml-2">
             <h4>Login</h4>
-            <form className="form login-form">
+            <form className="form login-form" onSubmit={handleSubmit}>
             <div className="form-group p-1">
                 <label htmlFor="email-login">Email:</label>
                 <br />
-                <input className="form-input" type="text" id="email-login" />
+                <input className="form-input" type="text" id="email-login" onChange={e => setUserName(e.target.value)} />
             </div>
 
             <div className="form-group p-1">
                 <label htmlFor="password-login">Password:</label>
                 <br />
-                <input className="form-input" type="password" id="password-login" />
+                <input className="form-input" type="password" id="password-login" onChange={e => setPassword(e.target.value)}/>
             </div>
 
             <br />
@@ -114,5 +138,9 @@ const Home = () => {
   </div>
   );
 };
+
+Home.propTypes = {
+    setToken: PropTypes.func.isRequired
+  }
 
 export default Home;
