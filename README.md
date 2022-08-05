@@ -17,7 +17,7 @@ As a group, we have collectively developed an application to help promote social
 
 6. Develope key tools for planning like weather reports, buddy systems, profiles, equipment borrowing, calendars, activities, etc.
 
-7. Polish the UI
+7. Polish the UI.
 
 8. Publish the application.
 
@@ -43,6 +43,8 @@ When I click on weather the report
 Then the application will present a map with a full report shown on the page.
 
 ## Website link:
+
+https://prezi.com/view/eTsG3cE9AcQFj8GvdTe7/
 
 
 ## Contact:
