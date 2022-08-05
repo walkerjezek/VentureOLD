@@ -5,6 +5,22 @@ As a group, we have collectively developed an application to help promote social
 
 ## Process:
 
+1. Seek a target audience.
+
+2. Develope a concept that will fulfill a desire/mvp.
+
+3. Create an application that is designed to help users plan out activities as well as discover them.
+
+4. Create user storage and login.
+
+5. Design a landing page.
+
+6. Develope key tools for planning like weather reports, buddy systems, profiles, equipment borrowing, calendars, activities, etc.
+
+7. Polish the UI.
+
+8. Publish the application.
+
 
 ## User Story:
 
@@ -13,9 +29,22 @@ I WANT to be able to create a profile that helps me discover people with the sam
 SO THAT I  can  organize plans for outdoor activities
 
 ## Acceptance Criteria
-
+When I launch Venture
+Then I am welcomed into the login screen.
+When I create/sign into my account
+Then I am directed to Venture's main hub where I can check in to my profile or enlist my upcoming activities.
+When I click my profile on the navigation bar
+Then I visually see my Profile Picture, Name, Username, My Activities, Friends, and Schedule.
+When I click on activites
+Then I see several options and skill levels to add to my profile as well as see other users that are also planning to go on the selected activity
+When I click on Schedule
+Then I am transferred over to a calendar where I can select dates and visualize my schedule.
+When I click on weather the report
+Then the application will present a map with a full report shown on the page.
 
 ## Website link:
+
+https://prezi.com/view/eTsG3cE9AcQFj8GvdTe7/
 
 
 ## Contact:
