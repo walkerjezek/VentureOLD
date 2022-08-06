@@ -90,13 +90,13 @@ const handleSubmit = async e => {
             <div className="form-group p-1">
                 <label htmlFor="username-create">Userame:</label>
                 <br />
-                <input className="form-input1" type="text" id="create1" />
+                <input className="form-input" type="text" id="create1" />
             </div>
 
             <div className="form-group p-1">
                 <label htmlFor="email-create">Email:</label>
                 <br />
-                <input className="form-input2" type="text" id="create2" />
+                <input className="form-input" type="text" id="create2" />
             </div>
 
             <div className="form-group p-1">
