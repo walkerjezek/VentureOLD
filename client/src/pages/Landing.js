@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useMutation, useQuery } from '@apollo/client';
-
+import { QUERY_ACTIVITY } from '../utils/queries';
 
 const Landing = () => {
   const { loading, data } = useQuery(QUERY_ACTIVITY);

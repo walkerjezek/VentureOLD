@@ -54,7 +54,7 @@ function App() {
   const token = getToken();
 
   if(!token) {
-    return <Login setToken={setToken} /> //made need to switch 'Login' to 'Home'
+    return <Home setToken={setToken} /> //made need to switch 'Login' to 'Home'
   }
 
   return (
