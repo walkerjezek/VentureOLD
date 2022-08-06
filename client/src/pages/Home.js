@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 // import { QUERY_MATCHUPS } from '../utils/queries';
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 // import './../../public/styles.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import PropTypes from 'prop-types';
@@ -45,7 +45,7 @@ const handleSubmit = async e => {
     <div className="col-md-6 col-sm-12 p-0 mb-0">
         <div
         className="img img-welcome"
-        style="max-width:100%; height:auto; margin-bottom:0 !important;"
+        style= {{ maxWidth:"100%", height:"auto", marginBottom:"0 !important"}}
         >
         <img src="https://theuiaa.org/wp-content/uploads/2019/07/RCFA19-Korea-6.jpg" alt="background" className="img-fluid" />
 
@@ -79,7 +79,7 @@ const handleSubmit = async e => {
     <div className="col-md-6 col-sm-12 p-0 mb-0">
         <div
         className="img img-welcome"
-        style="max-width:100%; height:auto; margin-bottom:0 !important;"
+        style= {{ maxWidth:"100%", height:"auto", marginBottom:"0 !important"}}
         >
         <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="stretch" className="img-fluid" />
 
